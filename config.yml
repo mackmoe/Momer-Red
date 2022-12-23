@@ -1,0 +1,315 @@
+---
+header: true
+title: "MoLovesToShare"
+subtitle: "Dashboard"
+logo: "logo.png"
+#icon: "fas fa-user-ninja"
+
+footer: '<p>Created with <span class="has-text-danger">❤️</span> by <a href="https://bulma.io/">bulma</a> // <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/search?m=free&o=r">font awesome</a><p>Customized with <a href="https://github.com/WalkxCode">Walkx Theme</a> & <a href="https://github.com/bastienwirtz/homer">Homer Dashboard </i></a>from <a href="https://github.com"><i class="fab fa-github"/></p>' # set false if you want to hide it.
+
+stylesheet:
+  - "assets/custom.css"
+
+columns: auto # You can change this to auto OR any number that is a factor of 12: (1, 2, 3, 4, 6, 12)
+theme: default
+colors:
+  light:
+    highlight-primary: "#fff5f2"
+    highlight-secondary: "#fff5f2"
+    highlight-hover: "#bebebe"
+    background: "#12152B"
+    card-background: "rgba(255, 245, 242, 0.8)"
+    text: "#ffffff"
+    text-header: "#fafafa"
+    text-title: "#000000"
+    text-subtitle: "#111111"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#3273dc"
+    link-hover: "#2e4053"
+    background-image: "../assets/wallpaper-light.jpeg" # Change wallpaper.jpeg to the name of your own custom wallpaper!
+  dark:
+    highlight-primary: "#181C3A"
+    highlight-secondary: "#181C3A"
+    highlight-hover: "#1F2347"
+    background: "#12152B"
+    card-background: "rgba(24, 28, 58, 0.8)"
+    text: "#eaeaea"
+    text-header: "#7C71DD"
+    text-title: "#fafafa"
+    text-subtitle: "#8B8D9C"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#c1c1c1"
+    link-hover: "#fafafa"
+    background-image: "../assets/wallpaper.jpeg"
+
+# See https://bulma.io/documentation/components/message/#colors for styling options.
+message:
+  style: "is-dark" 
+  icon: "fas fa-user-tie"
+  title: "TODO // DYNAMIC - NODE RED TARGET"
+  content: "This is a placeholer for cool shit to happen... wanna try something with node red here eventually"
+  target: "_blank" # optional html a tag target attribute
+
+# Navbar - optional without setting any links
+links: # Allows for navbar (dark mode, layout, and search) 
+  - name: "Amazon"
+    icon: "fa-brands fa-amazon"
+    url: "https://amazon.com"
+  - name: "Cloud Flare"
+    icon: "fa-brands fa-cloudflare"
+    url: "https://cloudflare.com"
+  - name: "G Mail"
+    icon: "fa-solid fa-envelope-open-text"
+    url: "https://mail.google.com"
+  - name: "Google Maps"
+    icon: "fa-solid fa-location-dot"
+    url: "https://maps.google.com"
+  - name: "Google"
+    icon: "fa-solid fa-magnifying-glass"
+    url: "https://google.com"
+    target: "_search" # optional html a tag target attribute
+  - name: "YouTube"
+    icon: "fa-brands fa-youtube"
+    url: https://www.youtube.com
+  
+  
+  # To link a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additional-page.yml.dist used in this example:
+  #- name: "another page!"
+  #  icon: "fas fa-file-alt"
+  #  url: "#additional-page" 
+
+services:
+  - name: "Monitoring Systems"
+    icon: "fas fa-heartbeat"
+    items:
+      - name: "Uptime Kuma"
+        icon: "fas fa-chart-line"
+        subtitle: "Uptime Monitoring Server"
+        tag: "monitoring"
+        tagstyle: is-info
+        url: "https://uptime.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Dozzle"
+        icon: "fa-solid fa-file-code"
+        subtitle: "Real-time log viewer for docker containers"
+        tag: "logz"
+        tagstyle: is-info
+        url: "https://deezlogz.molovestoshare.com/"
+        target: '_blank' # optional tag target - loads Homer in new tab page
+
+
+  - name: "DevOps Tools"
+    icon: "fa-solid fa-screwdriver-wrench"
+    items:
+      - name: "Portainer Controller"
+        icon: "fa-brands fa-docker"
+        subtitle: "Controller Web UI"
+        keywords: "devops portainer"
+        tag: "controller"
+        tagstyle: is-success
+        url: "https://portainer.molovestoshare.com"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "PiHole"
+        subtitle: "Network AdBlock Web UI"
+        icon: "fa-solid fa-user-shield"
+        keywords: "devops piHole"
+        tag: "controller"
+        tagstyle: is-success
+        url: "https://pihole.molovestoshare.com/admin/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Node Red Web Tools"
+        icon: "fa-brands fa-node"
+        subtitle: "NodeRed 3.0 Web Dev"
+        tag: "console"
+        tagstyle: is-success
+        keywords: "self hosted NodeRed"
+        url: "https://node-red.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+
+  - name: "Analytics"
+    icon: "fa-solid fa-dumpster-fire"
+    items:
+      - name: "Grafana"
+        icon: "fas fa-chart-area"
+        subtitle: "Analytics Dashboard"
+        tag: "monitoring"
+        tagstyle: []
+        url: "https://graffana.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Prometheus"
+        icon: "fa-solid fa-fire-flame-curved"
+        subtitle: "Prometheus Dashboard"
+        tag: "monitoring"
+        tagstyle: []
+        url: "https://prometheus.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Alert Manager"
+        icon: "fa-solid fa-satellite-dish"
+        subtitle: "Alertmanager Dashboard"
+        tag: "monitoring"
+        tagstyle: []
+        url: "https://alertmanager.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Prometheus Push Gateway"
+        icon: "fas fa-file-medical-alt"
+        subtitle: "Prometheus Dashboard"
+        tag: "monitoring"
+        tagstyle: []
+        url: "https://prom-push.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+
+  - name: "Media Stack"
+    icon: "fa-solid fa-photo-film"
+    items:
+      - name: "Plex"
+        icon: "fa-solid fa-play"
+        subtitle: "Plex Home Media Server"
+        tag: "media-Streaming"
+        tagstyle: is-info
+        keywords: "self hosted plex"
+        url: "https://plex.molovestoshare.com/web"
+      - name: "Ombi"
+        icon: "fa-solid fa-link"
+        subtitle: "Ombi Plex Plugin "
+        tag: "media-Streaming"
+        tagstyle: is-info
+        keywords: "ombi plex plugin"
+        url: "https://ombi.molovestoshare.com/login"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Sonarr"
+        icon: "fa-solid fa-tv"
+        subtitle: "TV Media Management Server"
+        tag: "media-tvShows"
+        tagstyle: is-info
+        url: "https://sonarr.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Radaarr"
+        icon: "fa-solid fa-ticket"
+        subtitle: "Movie Media Management Server"
+        tag: "media-Movies"
+        tagstyle: is-info
+        url: "https://radarr.molovestoshare.com"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+
+  - name: "GeeeeetEeet"
+    icon: "fa-solid fa-user-secret"
+    items:
+      - name: WireGaurd
+        icon: "fa-solid fa-dragon"
+        subtitle: "Container Stacks VPN controller"
+        tag: "vpn"
+        tagstyle: []
+        url: "https://wiregaurd.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Prowlarr"
+        icon: "fa-solid fa-spider"
+        subtitle: "RSS Feed Manager"
+        tag: "jackin-shit"
+        tagstyle: []
+        url: "https://prowlarr.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Transmission"
+        icon: "fa-solid fa-gauge-high"
+        subtitle: "Download Torrunts"
+        tag: "jackin-shit"
+        tagstyle: []
+        url: "http://transmission.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      # - name: ""
+      #   icon: ""
+      #   subtitle: ""
+      #   tag: ""
+      #   tagstyle: []
+      #   url: ""
+      #   target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+
+  - name: "Read Scripture"
+    icon: "fa-solid fa-church"
+    items:
+      - name: "Bible"
+        icon: "fa-solid fa-book-bible"
+        subtitle: "Modern Bible App"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "https://bible.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Parasha"
+        icon: "fa-solid fa-book-tanakh"
+        subtitle: "The Weekly Parshas"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "http://www.virtualhousechurch.com/system/app/pages/subPages?path=/biblestudies"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Bible Hub"
+        icon: "fa-solid fa-cross"
+        subtitle: "Bible Study Tools & Resources"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "https://biblehub.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Bible Gateway"
+        icon: "fa-solid fa-hands-praying"
+        subtitle: "Share Scripture Easily"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "https://www.biblegateway.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+
+  - name: "Streaming Media"
+    icon: "fa-solid fa-cloud"
+    items:
+      - name: "Crunchy Roll"
+        icon: "fa-solid fa-film"
+        subtitle: "Anime streaming Services"
+        tag: "streaming"
+        tagstyle: []
+        url: "https://crunchyroll.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Hulu"
+        icon: "fa-solid fa-hurricane"
+        subtitle: "Hulu streaming Services"
+        tag: "streaming"
+        tagstyle: []
+        keywords: "hulu"
+        url: "https://hulu.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Netflix"
+        icon: "fa-solid fa-tablet-screen-button"
+        subtitle: "Netflix streaming Services"
+        tag: "streaming"
+        tagstyle: []
+        url: "https://netflix.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Watch Cartoon Online"
+        icon: "fa-solid fa-skull-crossbones"
+        subtitle: "Streaming torrunts forever"
+        tag: "jackin-stream"
+        tagstyle: []
+        url: "https://www.wcoforever.net/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+
+  - name: "SlfHosted Blogs"
+    icon: "fa-solid fa-blog"
+    items:
+      - name: "MoLovestoshare"
+        icon: "fa-solid fa-ghost"
+        subtitle: "My self hosted Ghost blog"
+        tag: "blog"
+        tagstyle: is-info
+        keywords: "ghost"
+        url: "https://ghost.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Beths Blog"
+        icon: "fa-brands fa-wordpress"
+        subtitle: "Beth's wordpress bolg"
+        tag: "blog"
+        tagstyle: is-info
+        url: "https://bethsblog.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
