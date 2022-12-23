@@ -1,26 +1,25 @@
 
-# Momer
+# Momer-Red Dashboard
 
-I got sick of blowing away my shit and having to build stuff from scratch. Most this stuff is inspired by a need, then by borrowing ideas from other people. So now, I'm using this repo to save all my work done on my home dashboard. I aslo hope I am also able to lrean some things from this experience.
+I got sick of blowing away my stuff and having to build everything from scratch again... and again. So I decided to give [Bastien Wirtz's](https://github.com/bastienwirtz) [Homer Dashboard](https://github.com/bastienwirtz/homer) a try and I'm loving how simple it is! 
 
-
+I'm using this repo (linked) to a live self hosted docker instance, to keep track of what I build and add onto my custom verion of this awesome dashboard.
 
 
 ## Deployment
 
-To deploy any compose stack from this project, cd into the stack you want to create. 
-
-However, this stack should always be running and accessable to edit in the docker compose data dir for homer 
+This app stack is running on docker compose. The deployment included NodeRed because of [what I found here](https://flows.nodered.org/flow/4b6406c9a684c26ace0430dd1826e95d). For a live view at my current dashboard, [just click here](https://dashboard.molovestoshare.com/). 
 
 
 ## Acknowledgements
 
-Mostly born out of boredom and my quest for learning new shit, I borrowed a lot of ideas for this from work and legit DevOps blogs 
+Mostly born out of boredom and my quest for learning new techy things and building stuff, I borrowed a lot of ideas for this from what I do at work (DevOps). 
  - [Medium](https://medium.com/)
+ - [Awesome-Compose](https://github.com/docker/awesome-compose)
  - [LinuxServer IO](https://www.linuxserver.io/)
- - [Fleet](https://fleet.linuxserver.io)
- - [Awesome Slf Hosted Blogs on Google](https://google.com/)
+ - [Fleet Wiregaurd](https://github.com/linuxserver/docker-wireguard)
+ - [Awesome Slf Hosted Blogs on Google](https://lmgtfy.app/?q=self+hosted+development+projects)
 
 
 ### README
-This was generated with ❤️ from [Awesome Readme Template Generator](https://readme.so/)
+This magnificant README was generated with ❤️ from [Awesome Readme Template Generator](https://readme.so/)

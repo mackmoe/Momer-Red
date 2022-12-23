@@ -42,28 +42,43 @@ colors:
     link-hover: "#fafafa"
     background-image: "../assets/wallpaper.jpeg"
 
+
+# message:
+#   style: "is-info"
+#   title: "Search Using Your GOOGLE Fu"
+#   icon: "fa-brands fa-jedi-order"
+#   content: '<iframe src="https://duckduckgo.com/search.html?prefill=Search Google&focus=yes&kz=1&kac=1&kn=1&kp=-2&k1=-1" style="overflow:hidden;margin:0;padding:0;width:calc(100% - 100px);height:60px;" frameborder="0"></iframe>'
+  
+
 # See https://bulma.io/documentation/components/message/#colors for styling options.
 message:
   style: "is-dark" 
-  icon: "fas fa-user-tie"
+  icon: "fa-solid fa-person-digging"
   title: "TODO // DYNAMIC - NODE RED TARGET"
-  content: "This is a placeholer for cool shit to happen... wanna try something with node red here eventually"
+  # content: "This is a placeholer for cool shit to happen... wanna try something with node red here eventually"
+  content: '<iframe src="https://duckduckgo.com/search.html?prefill=Search Google&focus=yes&kz=1&kac=1&kn=1&kp=-2&k1=-1" style="overflow:hidden;margin:0;padding:0;width:calc(100% - 100px);height:60px;" frameborder="0"></iframe>'
   target: "_blank" # optional html a tag target attribute
+
 
 # Navbar - optional without setting any links
 links: # Allows for navbar (dark mode, layout, and search) 
   - name: "Amazon"
     icon: "fa-brands fa-amazon"
     url: "https://amazon.com"
+    target: '_blank'
+    # tagstyle:[ Different options are: is-info (blue) - is-success (green) - is-warning (yellow) - is-danger (red)]
   - name: "Cloud Flare"
     icon: "fa-brands fa-cloudflare"
     url: "https://cloudflare.com"
+    target: '_blank'
   - name: "G Mail"
     icon: "fa-solid fa-envelope-open-text"
     url: "https://mail.google.com"
+    target: '_blank'
   - name: "Google Maps"
     icon: "fa-solid fa-location-dot"
     url: "https://maps.google.com"
+    target: '_blank'
   - name: "Google"
     icon: "fa-solid fa-magnifying-glass"
     url: "https://google.com"
@@ -87,7 +102,7 @@ services:
         icon: "fas fa-chart-line"
         subtitle: "Uptime Monitoring Server"
         tag: "monitoring"
-        tagstyle: is-info
+        tagstyle: is-info # is-info (blue) is-success (green) is-warning (yellow) is-danger (red)
         url: "https://uptime.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Dozzle"
@@ -97,10 +112,25 @@ services:
         tagstyle: is-info
         url: "https://deezlogz.molovestoshare.com/"
         target: '_blank' # optional tag target - loads Homer in new tab page
+      - name: "CA Visor"
+        subtitle: "Real-time log viewer for docker containers"
+        icon: "fa-brands fa-earlybirds"
+        tag: "monitoring"
+        tagstyle: is-info  
+        url: https://cavisor.molovestoshare.com/
+        target: '_blank'
+      - name: "Tautulli"
+        icon: "fa-solid fa-photo-film"
+        subtitle: "Plex Home Media Server Analytics"
+        tag: "media-Streaming"
+        tagstyle: is-info
+        keywords: "Plex Analytics"
+        url: "https://tautulli.molovestoshare.com" 
+        target: '_blank'
 
 
-  - name: "DevOps Tools"
-    icon: "fa-solid fa-screwdriver-wrench"
+  - name: "DevOps & Botzz"
+    icon: "fa-solid fa-robot"
     items:
       - name: "Portainer Controller"
         icon: "fa-brands fa-docker"
@@ -117,6 +147,13 @@ services:
         tag: "controller"
         tagstyle: is-success
         url: "https://pihole.molovestoshare.com/admin/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "HomeBridge"
+        icon: "fa-solid fa-network-wired"
+        subtitle: "Home Automation for the Impatient"
+        tag: "home-autiomation"
+        tagstyle: is-success
+        url: "http://homebridge.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Node Red Web Tools"
         icon: "fa-brands fa-node"
@@ -136,7 +173,7 @@ services:
         subtitle: "Analytics Dashboard"
         tag: "monitoring"
         tagstyle: []
-        url: "https://graffana.molovestoshare.com/"
+        url: "https://grafana.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Prometheus"
         icon: "fa-solid fa-fire-flame-curved"
@@ -157,7 +194,7 @@ services:
         subtitle: "Prometheus Dashboard"
         tag: "monitoring"
         tagstyle: []
-        url: "https://prom-push.molovestoshare.com/"
+        url: "https://push-gw.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
 
@@ -171,6 +208,7 @@ services:
         tagstyle: is-info
         keywords: "self hosted plex"
         url: "https://plex.molovestoshare.com/web"
+        target: '_blank'
       - name: "Ombi"
         icon: "fa-solid fa-link"
         subtitle: "Ombi Plex Plugin "
@@ -311,5 +349,5 @@ services:
         subtitle: "Beth's wordpress bolg"
         tag: "blog"
         tagstyle: is-info
-        url: "https://bethsblog.molovestoshare.com/"
+        url: "https://beths-blog.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
