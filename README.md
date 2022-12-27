@@ -13,7 +13,7 @@ This app stack is running on docker compose. The deployment included NodeRed bec
 
 ## Acknowledgements
 
-Mostly born out of boredom and my quest for learning new techy things and building stuff, I borrowed a lot of ideas for this from what I do at work (DevOps). 
+Mostly born out of boredom and my thirst for learning new things and (of course) building stuff, I borrowed a lot of ideas for this from what I do at work (DevOps). 
  - [Medium](https://medium.com/)
  - [Awesome-Compose](https://github.com/docker/awesome-compose)
  - [LinuxServer IO](https://www.linuxserver.io/)

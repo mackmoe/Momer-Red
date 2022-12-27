@@ -55,8 +55,8 @@ message:
   style: "is-dark" 
   icon: "fa-solid fa-person-digging"
   title: "TODO // DYNAMIC - NODE RED TARGET"
-  # content: "This is a placeholer for cool shit to happen... wanna try something with node red here eventually"
-  content: '<iframe src="https://duckduckgo.com/search.html?prefill=Search Google&focus=yes&kz=1&kac=1&kn=1&kp=-2&k1=-1" style="overflow:hidden;margin:0;padding:0;width:calc(100% - 100px);height:60px;" frameborder="0"></iframe>'
+  # content: "This is a placeholer for cool shit to happen... wanna try something with node red here eventually. Not Duck Duck Go"
+  content: '<iframe src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo&focus=yes&kz=1&kac=1&kn=1&kp=-2&k1=-1" style="overflow:hidden;margin:0;padding:0;width:calc(100% - 100px);height:60px;" frameborder="0"></iframe>'
   target: "_blank" # optional html a tag target attribute
 
 
@@ -71,6 +71,9 @@ links: # Allows for navbar (dark mode, layout, and search)
     icon: "fa-brands fa-cloudflare"
     url: "https://cloudflare.com"
     target: '_blank'
+  - name: "My GitHub Repos"
+    icon: "fa-brands fa-github-alt"
+    url: "https://github.com/mackmoe?tab=repositories" 
   - name: "G Mail"
     icon: "fa-solid fa-envelope-open-text"
     url: "https://mail.google.com"
@@ -95,40 +98,6 @@ links: # Allows for navbar (dark mode, layout, and search)
   #  url: "#additional-page" 
 
 services:
-  - name: "Monitoring Systems"
-    icon: "fas fa-heartbeat"
-    items:
-      - name: "Uptime Kuma"
-        icon: "fas fa-chart-line"
-        subtitle: "Uptime Monitoring Server"
-        tag: "monitoring"
-        tagstyle: is-info # is-info (blue) is-success (green) is-warning (yellow) is-danger (red)
-        url: "https://uptime.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Dozzle"
-        icon: "fa-solid fa-file-code"
-        subtitle: "Real-time log viewer for docker containers"
-        tag: "logz"
-        tagstyle: is-info
-        url: "https://deezlogz.molovestoshare.com/"
-        target: '_blank' # optional tag target - loads Homer in new tab page
-      - name: "CA Visor"
-        subtitle: "Real-time log viewer for docker containers"
-        icon: "fa-brands fa-earlybirds"
-        tag: "monitoring"
-        tagstyle: is-info  
-        url: https://cavisor.molovestoshare.com/
-        target: '_blank'
-      - name: "Tautulli"
-        icon: "fa-solid fa-photo-film"
-        subtitle: "Plex Home Media Server Analytics"
-        tag: "media-Streaming"
-        tagstyle: is-info
-        keywords: "Plex Analytics"
-        url: "https://tautulli.molovestoshare.com" 
-        target: '_blank'
-
-
   - name: "DevOps & Botzz"
     icon: "fa-solid fa-robot"
     items:
@@ -164,8 +133,7 @@ services:
         url: "https://node-red.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
-
-  - name: "Analytics"
+  - name: "Analytics & Metrics"
     icon: "fa-solid fa-dumpster-fire"
     items:
       - name: "Grafana"
@@ -196,6 +164,38 @@ services:
         tagstyle: []
         url: "https://push-gw.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+  - name: "Monitoring Systems"
+    icon: "fas fa-heartbeat"
+    items:
+      - name: "Uptime Kuma"
+        icon: "fas fa-chart-line"
+        subtitle: "Uptime Monitoring Server"
+        tag: "monitoring"
+        tagstyle: is-info # is-info (blue) is-success (green) is-warning (yellow) is-danger (red)
+        url: "https://uptime.molovestoshare.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Dozzle"
+        icon: "fa-solid fa-file-code"
+        subtitle: "Real-time log viewer for docker containers"
+        tag: "logz"
+        tagstyle: is-info
+        url: "https://deezlogz.molovestoshare.com/"
+        target: '_blank' # optional tag target - loads Homer in new tab page
+      - name: "CA Visor"
+        subtitle: "Real-time log viewer for docker containers"
+        icon: "fa-brands fa-earlybirds"
+        tag: "monitoring"
+        tagstyle: is-info  
+        url: https://deezlogz.molovestoshare.com/
+        target: '_blank'
+      - name: "Hyperion"
+        subtitle: "The poorman's hue light sync"
+        icon: "fa-solid fa-tv"
+        tag: "hue-tools"
+        tagstyle: is-info
+        url: https://hyperion.molovestoshare.com/
+        target: '_blank'
 
 
   - name: "Media Stack"
