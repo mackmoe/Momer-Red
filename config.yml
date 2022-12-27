@@ -74,6 +74,7 @@ links: # Allows for navbar (dark mode, layout, and search)
   - name: "My GitHub Repos"
     icon: "fa-brands fa-github-alt"
     url: "https://github.com/mackmoe?tab=repositories" 
+    target: "_blank"
   - name: "G Mail"
     icon: "fa-solid fa-envelope-open-text"
     url: "https://mail.google.com"
@@ -206,17 +207,39 @@ services:
         subtitle: "Plex Home Media Server"
         tag: "media-Streaming"
         tagstyle: is-info
-        keywords: "self hosted plex"
+        keywords: "plex-mediasrvr"
         url: "https://plex.molovestoshare.com/web"
         target: '_blank'
-      - name: "Ombi"
-        icon: "fa-solid fa-link"
-        subtitle: "Ombi Plex Plugin "
+      - name: "Web Tools"
+        icon: "fa-solid fa-toolbox"
+        subtitle: "Unofficial Plex App Store"
+        tag: "plex-plugins"
+        tagstyle: is-info
+        keywords: "plex-apps"
+        url: "https://webtools.plex.molovestoshare.com/login"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Kitana"
+        icon: "fa-solid fa-user-ninja"
+        subtitle: "Access and manage unofficial Plex plugins"
+        tag: "plex-plugins"
+        tagstyle: is-info
+        keywords: "kitana plex plugin"
+        url: "https://kitana.plex.molovestoshare.com/login"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Tautulli"
+        icon: "fa-solid fa-chart-pie"
+        subtitle: "Plex server statistics"
         tag: "media-Streaming"
         tagstyle: is-info
-        keywords: "ombi plex plugin"
-        url: "https://ombi.molovestoshare.com/login"
+        keywords: "plex-plugins"
+        url: "https://tautulli.plex.molovestoshare.com/login"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      
+
+
+  - name: "GeeeeetEeet"
+    icon: "fa-solid fa-user-secret"
+    items:
       - name: "Sonarr"
         icon: "fa-solid fa-tv"
         subtitle: "TV Media Management Server"
@@ -231,17 +254,12 @@ services:
         tagstyle: is-info
         url: "https://radarr.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-
-
-  - name: "GeeeeetEeet"
-    icon: "fa-solid fa-user-secret"
-    items:
-      - name: WireGaurd
-        icon: "fa-solid fa-dragon"
-        subtitle: "Container Stacks VPN controller"
-        tag: "vpn"
+      - name: "Transmission"
+        icon: "fa-solid fa-gauge-high"
+        subtitle: "Download Torrunts"
+        tag: "jackin-shit"
         tagstyle: []
-        url: "https://wiregaurd.molovestoshare.com/"
+        url: "http://transmission.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Prowlarr"
         icon: "fa-solid fa-spider"
@@ -249,13 +267,6 @@ services:
         tag: "jackin-shit"
         tagstyle: []
         url: "https://prowlarr.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Transmission"
-        icon: "fa-solid fa-gauge-high"
-        subtitle: "Download Torrunts"
-        tag: "jackin-shit"
-        tagstyle: []
-        url: "http://transmission.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       # - name: ""
       #   icon: ""
@@ -267,7 +278,7 @@ services:
 
 
   - name: "Read Scripture"
-    icon: "fa-solid fa-church"
+    icon: "fa-solid fa-chess-king"
     items:
       - name: "Bible"
         icon: "fa-solid fa-book-bible"
@@ -291,7 +302,7 @@ services:
         url: "https://biblehub.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Bible Gateway"
-        icon: "fa-solid fa-hands-praying"
+        icon: "fa-solid fa-church"
         subtitle: "Share Scripture Easily"
         tag: "bible study"
         tagstyle: is-success
