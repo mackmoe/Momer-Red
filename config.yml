@@ -105,7 +105,7 @@ links: # Allows for navbar (dark mode, layout, and search)
 
 services:
   - name: "Controller Apps"
-    icon: "fa-solid fa-microchip"
+    icon: "fas fa-users-cog"
     items:
       - name: "Portainer"
         icon: "fa-brands fa-docker"
@@ -137,14 +137,14 @@ services:
       - name: "HomeBridge"
         icon: "fa-solid fa-house"
         subtitle: "Home Automation for the Impatient"
-        tag: "home-autiomation"
+        tag: "home-automation"
         tagstyle: is-success
         url: "http://homebridge.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Hyperion"
         subtitle: "The poorman's hue light sync"
         icon: "fa-solid fa-tv"
-        tag: "home-autiomation"
+        tag: "light-sync"
         tagstyle: is-success
         url: https://hyperion.molovestoshare.com/
         target: '_blank'
