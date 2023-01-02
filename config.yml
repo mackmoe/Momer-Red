@@ -104,17 +104,36 @@ links: # Allows for navbar (dark mode, layout, and search)
   #  url: "#additional-page" 
 
 services:
-  - name: "DevOps & Botzz"
-    icon: "fa-solid fa-robot"
+  - name: "Controller Apps"
+    icon: "fa-solid fa-microchip"
     items:
-      - name: "Portainer Controller"
+      - name: "Portainer"
         icon: "fa-brands fa-docker"
-        subtitle: "Controller Web UI"
+        subtitle: "Docker Controller Web UI"
         keywords: "devops portainer"
-        tag: "controller"
-        tagstyle: "is-medium is-primary"
+        tag: "docker-controller"
+        tagstyle: "is-info"
         url: "https://portainer.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "CAVisor"
+        subtitle: "Controller Monitoring"
+        icon: "fa-brands fa-earlybirds"
+        tag: "monitoring-controller"
+        tagstyle: is-info  
+        url: https://cavisor.molovestoshare.com/
+        target: '_blank'
+      - name: "Keycloak"
+        subtitle: "SSO Proxy Controller"
+        icon: "fa-solid fa-user-shield"
+        keywords: "sso keycloak"
+        tag: "sso-controller"
+        tagstyle: is-info 
+        url: "https://sso.molovestoshare.com"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+  - name: "Botzz & SlfHosted Apps"
+    icon: "fa-solid fa-chalkboard-user"
+    items:
       - name: "HomeBridge"
         icon: "fa-solid fa-house"
         subtitle: "Home Automation for the Impatient"
@@ -122,198 +141,33 @@ services:
         tagstyle: is-success
         url: "http://homebridge.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: VS Code Server
-        subtitle: "VS Code running on a remote server."
-        icon: "fas fa-cog"
-        tag: "web-dev"
-        tagstyle: is-success
-        keywords: "self hosted VSCode"
-        url: https://code-server.molovestoshare.com/?folder=/config/workspace
-        target: "_blank" # optional html tag target attribute
-      - name: "Node Red Web Tools"
-        icon: "fa-brands fa-node"
-        subtitle: "NodeRed 3.0 Web Dev"
-        tag: "console"
-        tagstyle: is-success
-        keywords: "self hosted NodeRed"
-        url: "http://node-red.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-
-  - name: "Analytics & Metrics"
-    icon: "fa-solid fa-dumpster-fire"
-    items:
-      - name: "Grafana"
-        icon: "fas fa-chart-area"
-        subtitle: "Analytics Dashboard"
-        tag: "monitoring"
-        tagstyle: []
-        url: "https://grafana.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Prometheus"
-        icon: "fa-solid fa-fire-flame-curved"
-        subtitle: "Prometheus Dashboard"
-        tag: "monitoring"
-        tagstyle: []
-        url: "https://prometheus.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Alert Manager"
-        icon: "fa-solid fa-satellite-dish"
-        subtitle: "Alertmanager Dashboard"
-        tag: "monitoring"
-        tagstyle: []
-        url: "https://alertmanager.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Prometheus Push Gateway"
-        icon: "fas fa-file-medical-alt"
-        subtitle: "Prometheus Dashboard"
-        tag: "monitoring"
-        tagstyle: []
-        url: "https://push-gw.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-
-  - name: "Monitoring Systems"
-    icon: "fas fa-heartbeat"
-    items:
-      - name: "Uptime Kuma"
-        icon: "fas fa-chart-line"
-        subtitle: "Uptime Monitoring Server"
-        tag: "monitoring"
-        tagstyle: is-info # is-info (blue) is-success (green) is-warning (yellow) is-danger (red)
-        url: "https://uptime.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Dozzle"
-        icon: "fa-solid fa-file-code"
-        subtitle: "Real-time log viewer for docker containers"
-        tag: "logz"
-        tagstyle: is-info
-        url: "https://deezlogz.molovestoshare.com/"
-        target: '_blank' # optional tag target - loads Homer in new tab page
-      - name: "CA Visor"
-        subtitle: "Real-time log viewer for docker containers"
-        icon: "fa-brands fa-earlybirds"
-        tag: "monitoring"
-        tagstyle: is-info  
-        url: https://cavisor.molovestoshare.com/
-        target: '_blank'
-      - name: "PiHole"
-        subtitle: "Network AdBlock Web UI"
-        icon: "fa-solid fa-user-shield"
-        keywords: "devops piHole"
-        tag: "controller"
-        tagstyle: is-info 
-        url: "http://192.168.50.106:32880/admin/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-
-
-  - name: "Media Stack"
-    icon: "fa-solid fa-photo-film"
-    items:
-      - name: "Plex"
-        icon: "fa-solid fa-play"
-        subtitle: "Plex Home Media Server"
-        tag: "media-Streaming"
-        tagstyle: []
-        keywords: "plex-mediasrvr"
-        url: "https://plex.molovestoshare.com/web"
-        target: '_blank'
-      - name: "Kitana"
-        icon: "fa-solid fa-user-ninja"
-        subtitle: "Access and manage unofficial Plex plugins"
-        tag: "plex-plugins"
-        tagstyle: []
-        keywords: "kitana plex plugin"
-        url: "https://kitana.molovestoshare.com"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Tautulli"
-        icon: "fa-solid fa-chart-pie"
-        subtitle: "Plex server statistics"
-        tag: "media-Streaming"
-        tagstyle: []
-        keywords: "plex-plugins"
-        url: "https://tautulli.molovestoshare.com"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Hyperion"
         subtitle: "The poorman's hue light sync"
         icon: "fa-solid fa-tv"
-        tag: "hue-tools"
-        tagstyle: []
+        tag: "home-autiomation"
+        tagstyle: is-success
         url: https://hyperion.molovestoshare.com/
         target: '_blank'
       
 
-
-  - name: "GeeeeetEeet"
-    icon: "fa-solid fa-user-secret"
+  - name: "SlfHosted Blogs"
+    icon: "fa-solid fa-blog"
     items:
-      - name: "Sonarr"
-        icon: "fa-solid fa-tv"
-        subtitle: "TV Media Management Server"
-        tag: "media-tvShows"
+      - name: "MoLovestoshare"
+        icon: "fa-solid fa-ghost"
+        subtitle: "My self hosted Ghost blog"
+        tag: "blog"
         tagstyle: is-info
-        url: "http://sonarr.molovestoshare.com/"
+        keywords: "ghost"
+        url: "https://ghost.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Radaarr"
-        icon: "fa-solid fa-ticket"
-        subtitle: "Movie Media Management Server"
-        tag: "media-Movies"
+      - name: "Beths Blog"
+        icon: "fa-brands fa-wordpress"
+        subtitle: "Beth's wordpress bolg"
+        tag: "blog"
         tagstyle: is-info
-        url: "http://radarr.molovestoshare.com"
+        url: "https://bethsblog.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Prowlarr"
-        icon: "fa-solid fa-paw"
-        subtitle: "RSS Feed Manager"
-        tag: "jackin-shit"
-        tagstyle: is-info
-        url: "http://prowlarr.molovestoshare.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Transmission"
-        icon: "fa-solid fa-user-astronaut"
-        subtitle: "Transmission is open source bitorruntz"
-        tag: "jackin-shit"
-        tagstyle: is-info
-        url: "http://transmission.molovestoshare.com"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      # - name: ""
-      #   icon: ""
-      #   subtitle: ""
-      #   tag: ""
-      #   tagstyle: []
-      #   url: ""
-      #   target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-
-
-  - name: "Read Scripture"
-    icon: "fa-solid fa-chess-king"
-    items:
-      - name: "Bible"
-        icon: "fa-solid fa-book-bible"
-        subtitle: "Modern Bible App"
-        tag: "bible study"
-        tagstyle: is-success
-        url: "https://bible.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Parasha"
-        icon: "fa-solid fa-book-tanakh"
-        subtitle: "The Weekly Parshas"
-        tag: "bible study"
-        tagstyle: is-success
-        url: "http://www.virtualhousechurch.com/system/app/pages/subPages?path=/biblestudies"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Bible Hub"
-        icon: "fa-solid fa-cross"
-        subtitle: "Bible Study Tools & Resources"
-        tag: "bible study"
-        tagstyle: is-success
-        url: "https://biblehub.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Bible Gateway"
-        icon: "fa-solid fa-church"
-        subtitle: "Share Scripture Easily"
-        tag: "bible study"
-        tagstyle: is-success
-        url: "https://www.biblegateway.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-
 
   - name: "Streaming Media"
     icon: "fa-solid fa-cloud"
@@ -348,22 +202,168 @@ services:
         url: "https://www.wcoforever.net/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
-
-  - name: "SlfHosted Blogs"
-    icon: "fa-solid fa-blog"
+  - name: "Read Scripture"
+    icon: "fa-solid fa-chess-king"
     items:
-      - name: "MoLovestoshare"
-        icon: "fa-solid fa-ghost"
-        subtitle: "My self hosted Ghost blog"
-        tag: "blog"
-        tagstyle: is-info
-        keywords: "ghost"
-        url: "https://ghost.molovestoshare.com/"
+      - name: "Bible"
+        icon: "fa-solid fa-book-bible"
+        subtitle: "Modern Bible App"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "https://bible.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Beths Blog"
-        icon: "fa-brands fa-wordpress"
-        subtitle: "Beth's wordpress bolg"
-        tag: "blog"
-        tagstyle: is-info
-        url: "https://bethsblog.molovestoshare.com/"
+      - name: "Parasha"
+        icon: "fa-solid fa-book-tanakh"
+        subtitle: "The Weekly Parshas"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "http://www.virtualhousechurch.com/system/app/pages/subPages?path=/biblestudies"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Bible Hub"
+        icon: "fa-solid fa-cross"
+        subtitle: "Bible Study Tools & Resources"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "https://biblehub.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Bible Gateway"
+        icon: "fa-solid fa-church"
+        subtitle: "Share Scripture Easily"
+        tag: "bible study"
+        tagstyle: is-success
+        url: "https://www.biblegateway.com/"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+  - name: "Media Stack"
+    icon: "fa-solid fa-photo-film"
+    items:
+      - name: "Plex"
+        icon: "fa-solid fa-play"
+        subtitle: "Plex Home Media Server"
+        tag: "media-Streaming"
+        tagstyle: []
+        keywords: "plex-mediasrvr"
+        url: "https://plex.molovestoshare.com/web"
+        target: '_blank'
+      - name: "Kitana"
+        icon: "fa-solid fa-user-ninja"
+        subtitle: "Access and manage unofficial Plex plugins"
+        tag: "plex-plugins"
+        tagstyle: []
+        keywords: "kitana plex plugin"
+        url: "https://kitana.molovestoshare.com"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "Tautulli"
+        icon: "fa-solid fa-chart-pie"
+        subtitle: "Plex server statistics"
+        tag: "media-Streaming"
+        tagstyle: []
+        keywords: "plex-plugins"
+        url: "https://tautulli.molovestoshare.com"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      
+
+
+  # - name: "Analytics & Metrics"
+  #   icon: "fa-solid fa-dumpster-fire"
+  #   items:
+  #     - name: "Node Red Web Tools"
+  #       icon: "fa-brands fa-node"
+  #       subtitle: "NodeRed 3.0 Web Dev"
+  #       tag: "console"
+  #       tagstyle: is-success
+  #     - name: VS Code Server
+  #       subtitle: "VS Code running on a remote server."
+  #       icon: "fas fa-cog"
+  #       tag: "web-dev"
+  #       tagstyle: is-success
+  #       keywords: "self hosted VSCode"
+  #       url: https://code-server.molovestoshare.com/?folder=/config/workspace
+  #       target: "_blank" # optional html tag target attribute
+  #     - name: "Grafana"
+  #       icon: "fas fa-chart-area"
+  #       subtitle: "Analytics Dashboard"
+  #       tag: "monitoring"
+  #       tagstyle: []
+  #       url: "https://grafana.molovestoshare.com/"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  #     - name: "Prometheus"
+  #       icon: "fa-solid fa-fire-flame-curved"
+  #       subtitle: "Prometheus Dashboard"
+  #       tag: "monitoring"
+  #       tagstyle: []
+  #       url: "https://prometheus.molovestoshare.com/"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  #     - name: "Alert Manager"
+  #       icon: "fa-solid fa-satellite-dish"
+  #       subtitle: "Alertmanager Dashboard"
+  #       tag: "monitoring"
+  #       tagstyle: []
+  #       url: "https://alertmanager.molovestoshare.com/"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  #     - name: "Prometheus Push Gateway"
+  #       icon: "fas fa-file-medical-alt"
+  #       subtitle: "Prometheus Dashboard"
+  #       tag: "monitoring"
+  #       tagstyle: []
+  #       url: "https://push-gw.molovestoshare.com/"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  # - name: "Uptime Kuma"
+  #       icon: "fas fa-chart-line"
+  #       subtitle: "Uptime Monitoring Server"
+  #       tag: "monitoring"
+  #       tagstyle: is-info # is-info (blue) is-success (green) is-warning (yellow) is-danger (red)
+  #       url: "https://uptime.molovestoshare.com/"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  #     - name: "Dozzle"
+  #       icon: "fa-solid fa-file-code"
+  #       subtitle: "Real-time log viewer for docker containers"
+  #       tag: "logz"
+  #       tagstyle: is-info
+  #       url: "https://deezlogz.molovestoshare.com/"
+  #       target: '_blank' # optional tag target - loads Homer in new tab page
+
+  
+      
+
+
+  # - name: "GeeeeetEeet"
+  #   icon: "fa-solid fa-user-secret"
+  #   items:
+  #     - name: "Sonarr"
+  #       icon: "fa-solid fa-tv"
+  #       subtitle: "TV Media Management Server"
+  #       tag: "media-tvShows"
+  #       tagstyle: is-info
+  #       url: "http://sonarr.molovestoshare.com/"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  #     - name: "Radaarr"
+  #       icon: "fa-solid fa-ticket"
+  #       subtitle: "Movie Media Management Server"
+  #       tag: "media-Movies"
+  #       tagstyle: is-info
+  #       url: "http://radarr.molovestoshare.com"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  #     - name: "Prowlarr"
+  #       icon: "fa-solid fa-paw"
+  #       subtitle: "RSS Feed Manager"
+  #       tag: "jackin-shit"
+  #       tagstyle: is-info
+  #       url: "http://prowlarr.molovestoshare.com/"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+  #     - name: "Transmission"
+  #       icon: "fa-solid fa-user-astronaut"
+  #       subtitle: "Transmission is open source bitorruntz"
+  #       tag: "jackin-shit"
+  #       tagstyle: is-info
+  #       url: "http://transmission.molovestoshare.com"
+  #       target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      # - name: ""
+      #   icon: ""
+      #   subtitle: ""
+      #   tag: ""
+      #   tagstyle: []
+      #   url: ""
+      #   target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
+  
