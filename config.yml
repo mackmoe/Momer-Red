@@ -5,7 +5,7 @@ subtitle: "Dashboard"
 logo: "logo.png"
 #icon: "fas fa-user-ninja"
 
-footer: '<p>Created with <span class="has-text-danger">❤️</span> by <a href="https://bulma.io/">bulma</a> // <a href="https://vuejs.org/">vuejs</a> & <a href="https://kit.fontawesome.com/b5622d353b.js">font awesome</a><p>Customized with <a href="https://github.com/WalkxCode">Walkx Theme</a> & <a href="https://github.com/bastienwirtz/homer">Homer Dashboard </i></a>from <a href="https://github.com"><i class="fab fa-github"/></p>' # set false if you want to hide it.
+footer: '<p>Created with <span class="has-text-danger">❤️</span> by <a href="https://bulma.io/">bulma</a> // <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/v5/search?o=r&m=free">font awesome</a><p>Customized with <a href="https://github.com/WalkxCode">Walkx Theme</a> & <a href="https://github.com/bastienwirtz/homer">Homer Dashboard </i></a>from <a href="https://github.com"><i class="fab fa-github"/></p>' # set false if you want to hide it.
 
 stylesheet:
   - "assets/custom.css"
@@ -157,14 +157,6 @@ services:
         keywords: "plex-plugin"
         url: "https://ombi.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Tautulli"
-        icon: "fa-solid fa-chart-pie"
-        subtitle: "Media Server Stats"
-        tag: "plex-plugins"
-        tagstyle: []
-        keywords: "plex-plugins"
-        url: "https://tautulli.molovestoshare.com"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
   - name: "Streaming Media"
     icon: "fas fa-podcast"
@@ -196,7 +188,7 @@ services:
         subtitle: "Streaming torrunts forever"
         tag: "jackin-stream"
         tagstyle: []
-        url: "https://www.wcoforever.net/"
+        url: "https://www.wcostream.net/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
   - name: "Controller Apps"
@@ -204,26 +196,26 @@ services:
     items:
       - name: "Portainer"
         icon: "fa-brands fa-docker"
-        subtitle: "Docker Controller Web UI"
+        subtitle: "Controller Web UI"
         keywords: "devops portainer"
         tag: "docker-controller"
         tagstyle: "is-info"
         url: "https://portainer.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "CAVisor"
-        subtitle: "Controller Monitoring"
+        subtitle: "Controller Resource Web UI"
         icon: "fa-brands fa-earlybirds"
         tag: "monitoring-controller"
         tagstyle: is-info  
         url: "https://cavisor.molovestoshare.com/"
         target: '_blank'
-      - name: "TODO // Keycloak"
-        subtitle: "SSO Proxy Controller"
-        icon: "fa-solid fa-user-shield"
-        keywords: "sso keycloak"
-        tag: "sso-controller"
+      - name: "Dozzle Logs"
+        subtitle: "Container Logs Web UI"
+        icon: "fas fa-file-code"
+        keywords: "clogs"
+        tag: "container-logs"
         tagstyle: is-info 
-        url: "https://sso.molovestoshare.com"
+        url: "https://clogs.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
   - name: "GeeeeetEeet"
