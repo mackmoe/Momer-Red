@@ -91,7 +91,7 @@ links: # Allows for navbar (dark mode, layout, and search)
 
 services:
   - name: "Read Scripture"
-    icon: "fas fa-scroll"
+    icon: "fas fa-torah"
     items:
       - name: "Bible"
         icon: "fa-solid fa-book-bible"
@@ -149,13 +149,13 @@ services:
         keywords: "plex-plugins"
         url: "https://radarr.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Ombi"
-        icon: "fa-solid fa-user-astronaut"
+      - name: "Prowlarr"
+        icon: "fas fa-paw"
         subtitle: "Access and manage playlists and requests"
         tag: "plex-plugins"
         tagstyle: []
-        keywords: "plex-plugin"
-        url: "https://ombi.molovestoshare.com"
+        keywords: "plex-plugins"
+        url: "https://prowlarr.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
   - name: "Streaming Media"
@@ -183,12 +183,12 @@ services:
         tagstyle: []
         url: "https://netflix.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Watch Cartoon Online"
-        icon: "fa-solid fa-skull-crossbones"
-        subtitle: "Streaming torrunts forever"
-        tag: "jackin-stream"
+      - name: "Funimation"
+        icon: "far fa-laugh-squint"
+        subtitle: "Streaming anime forever"
+        tag: "streaming"
         tagstyle: []
-        url: "https://www.wcostream.net/"
+        url: "https://www.funimation.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
   - name: "Controller Apps"
@@ -215,7 +215,7 @@ services:
         keywords: "clogs"
         tag: "container-logs"
         tagstyle: is-info 
-        url: "https://clogs.molovestoshare.com"
+        url: "https://doozle.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
   - name: "GeeeeetEeet"
@@ -228,12 +228,12 @@ services:
         tagstyle: []
         url: "https://qbot.molovestoshare.com/"  
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Prowlarr"
-        subtitle: "Arr Aggergator"
-        icon: "fas fa-paw"
+      - name: "Mullvad VPN"
+        subtitle: "Primary VPN"
+        icon: "fas fa-user-tie"
         tag: "jackin-shit"
         tagstyle: []
-        url: "https://prowlarr.molovestoshare.com/"
+        url: "https://mullvad.net/en/account/#/login?next=/"
         target: '_blank'
 
   - name: "Botzz & Automation"
