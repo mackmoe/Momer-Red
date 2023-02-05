@@ -221,12 +221,12 @@ services:
   - name: "GeeeeetEeet"
     icon: "fa-solid fa-user-secret"
     items:
-      - name: "QBeeTorruntz"
+      - name: "DlooGETorruntz"
         icon: "fas fa-robot"
-        subtitle: "qBtoruntz open source bitorruntz"
+        subtitle: "Dtoruntz open source bitorruntz"
         tag: "jackin-shit"
         tagstyle: []
-        url: "https://qbot.molovestoshare.com/"  
+        url: "https://dbotz.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Mullvad VPN"
         subtitle: "Primary VPN"
