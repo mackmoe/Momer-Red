@@ -118,6 +118,33 @@ services:
         url: "https://www.biblegateway.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
+  - name: "Controller Apps"
+    icon: "fas fa-users-cog"
+    items:
+      - name: "Portainer"
+        icon: "fa-brands fa-docker"
+        subtitle: "Controller Web UI"
+        keywords: "devops portainer"
+        tag: "docker-controller"
+        tagstyle: "is-info"
+        url: "https://portainer.molovestoshare.com"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "CAVisor"
+        subtitle: "Controller Resource Web UI"
+        icon: "fa-brands fa-earlybirds"
+        tag: "monitoring-controller"
+        tagstyle: is-info  
+        url: "https://cavisor.molovestoshare.com/"
+        target: '_blank'
+      - name: "Dozzle Logs"
+        subtitle: "Container Logs Web UI"
+        icon: "fas fa-file-code"
+        keywords: "clogs"
+        tag: "container-logs"
+        tagstyle: is-info 
+        url: "https://doozle.molovestoshare.com"
+        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+
   - name: "Media Stack"
     icon: "fa-solid fa-photo-film"
     items:
@@ -185,33 +212,6 @@ services:
         tag: "streaming"
         tagstyle: []
         url: "https://www.funimation.com/"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-
-  - name: "Controller Apps"
-    icon: "fas fa-users-cog"
-    items:
-      - name: "Portainer"
-        icon: "fa-brands fa-docker"
-        subtitle: "Controller Web UI"
-        keywords: "devops portainer"
-        tag: "docker-controller"
-        tagstyle: "is-info"
-        url: "https://portainer.molovestoshare.com"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "CAVisor"
-        subtitle: "Controller Resource Web UI"
-        icon: "fa-brands fa-earlybirds"
-        tag: "monitoring-controller"
-        tagstyle: is-info  
-        url: "https://cavisor.molovestoshare.com/"
-        target: '_blank'
-      - name: "Dozzle Logs"
-        subtitle: "Container Logs Web UI"
-        icon: "fas fa-file-code"
-        keywords: "clogs"
-        tag: "container-logs"
-        tagstyle: is-info 
-        url: "https://doozle.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
 
   - name: "GeeeeetEeet"
