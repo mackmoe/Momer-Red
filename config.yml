@@ -59,15 +59,11 @@ colors:
 
 # Navbar - optional without setting any links
 links: # Allows for navbar (dark mode, layout, and search) 
-  - name: "Amazon"
-    icon: "fa-brands fa-amazon"
-    url: "https://amazon.com"
-    target: '_blank'
-    # tagstyle:[ Different options are: is-info (blue) - is-success (green) - is-warning (yellow) - is-danger (red)]
   - name: "Cloud Flare"
     icon: "fa-brands fa-cloudflare"
     url: "https://cloudflare.com"
     target: '_blank'
+    # tagstyle:[ Different options are: is-info (blue) - is-success (green) - is-warning (yellow) - is-danger (red)]
   - name: "My GitHub Repos"
     icon: "fa-brands fa-github-alt"
     url: "https://github.com/mackmoe?tab=repositories" 
@@ -151,7 +147,7 @@ services:
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
       - name: "Prowlarr"
         icon: "fas fa-paw"
-        subtitle: "Access and manage playlists and requests"
+        subtitle: "Indexerrr Access and Management"
         tag: "plex-plugins"
         tagstyle: []
         keywords: "plex-plugins"
@@ -228,13 +224,19 @@ services:
         tagstyle: []
         url: "https://dbotz.molovestoshare.com/"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "Mullvad VPN"
-        subtitle: "Primary VPN"
-        icon: "fas fa-user-tie"
+      - name: "PiHole"
+        subtitle: "Local DHCP & DNS Svcs"
+        icon: "fas fa-user-astronaut"
         tag: "jackin-shit"
         tagstyle: []
-        url: "https://mullvad.net/en/account/#/login?next=/"
+        url: "http://192.168.10.29:32789/admin/index.php"  # url: "https://pihole.molovestoshare.com/admin/"
         target: '_blank'
+      - name: "ATT Router / Gateway"
+        subtitle: "Local ISP Appliance"
+        icon: "fa-brands fa-battle-net"
+        url: "https://192.168.10.254/cgi-bin/home.ha"
+        tag: "jackin-shit"
+        tagstyle: []
 
   - name: "Botzz & Automation"
     icon: "fa-solid fa-chalkboard-user"
