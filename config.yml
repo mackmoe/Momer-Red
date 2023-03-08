@@ -129,13 +129,6 @@ services:
         tagstyle: "is-info"
         url: "https://portainer.molovestoshare.com"
         target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
-      - name: "CAVisor"
-        subtitle: "Controller Resource Web UI"
-        icon: "fa-brands fa-earlybirds"
-        tag: "monitoring-controller"
-        tagstyle: is-info  
-        url: "https://cavisor.molovestoshare.com/"
-        target: '_blank'
       - name: "Dozzle Logs"
         subtitle: "Container Logs Web UI"
         icon: "fas fa-file-code"
@@ -143,7 +136,21 @@ services:
         tag: "container-logs"
         tagstyle: is-info 
         url: "https://doozle.molovestoshare.com"
-        target: '_blank' # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+        target: '_blank'
+      - name: "checkmk"
+        icon: "fas fa-chart-area"
+        subtitle: "CheckMK UI"
+        keywords: "devops monitoring"
+        tag: "monitoring-controller"
+        tagstyle: "is-info"
+        url: "https://checkmk.molovestoshare.com/cmk/check_mk" # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+      - name: "CAVisor"
+        subtitle: "Controller Resource Web UI"
+        icon: "fa-brands fa-earlybirds"
+        tag: "monitoring-controller"
+        tagstyle: is-info  
+        url: "https://cavisor.molovestoshare.com/"
+        target: '_blank'
 
   - name: "Media Stack"
     icon: "fa-solid fa-photo-film"
