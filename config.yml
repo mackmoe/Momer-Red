@@ -144,6 +144,7 @@ services:
         tag: "monitoring-controller"
         tagstyle: "is-info"
         url: "https://checkmk.molovestoshare.com/cmk/check_mk" # optional html a tag target attribute - loads Homer in an iframe on your new tab page
+        target: '_blank'
       - name: "CAVisor"
         subtitle: "Controller Resource Web UI"
         icon: "fa-brands fa-earlybirds"
